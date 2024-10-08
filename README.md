@@ -22,31 +22,18 @@ You can install the package via composer:
 ```bash
 composer require meetjet/laravel-telegram-gatewayapi
 ```
-
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-telegram-gatewayapi-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="laravel-telegram-gatewayapi-config"
+php artisan vendor:publish --tag="telegram-gatewayapi-config"
 ```
 
 This is the contents of the published config file:
 
 ```php
 return [
+    'token' => env('TELEGRAM_GATEWAY_TOKEN'),
 ];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-telegram-gatewayapi-views"
 ```
 
 ## Usage
