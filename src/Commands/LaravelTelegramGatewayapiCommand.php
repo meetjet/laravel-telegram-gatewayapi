@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Meetjet\LaravelTelegramGatewayapi\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelTelegramGatewayapiCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-telegram-gatewayapi';
 
     public $description = 'My command';
 

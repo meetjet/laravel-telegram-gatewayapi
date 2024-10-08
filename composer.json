@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "meetjet/laravel-telegram-gatewayapi",
+    "description": "A Telegram Gateway API adapter for Laravel",
     "keywords": [
-        ":vendor_name",
+        "meetjet",
         "laravel",
-        ":package_slug"
+        "laravel-telegram-gatewayapi"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/meetjet/laravel-telegram-gatewayapi",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Zorca Orcinus",
+            "email": "vs@zorca.org",
             "role": "Developer"
         }
     ],
@@ -35,19 +35,19 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Meetjet\\LaravelTelegramGatewayapi\\": "src/",
+            "Meetjet\\LaravelTelegramGatewayapi\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Meetjet\\LaravelTelegramGatewayapi\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
     "scripts": {
         "post-autoload-dump": "@composer run prepare",
-        "clear": "@php vendor/bin/testbench package:purge-skeleton --ansi",
+        "clear": "@php vendor/bin/testbench package:purge-laravel-telegram-gatewayapi --ansi",
         "prepare": "@php vendor/bin/testbench package:discover --ansi",
         "build": [
             "@composer run prepare",
@@ -73,10 +73,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Meetjet\\LaravelTelegramGatewayapi\\LaravelTelegramGatewayapiServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelTelegramGatewayapi": "Meetjet\\LaravelTelegramGatewayapi\\Facades\\LaravelTelegramGatewayapi"
             }
         }
     },
