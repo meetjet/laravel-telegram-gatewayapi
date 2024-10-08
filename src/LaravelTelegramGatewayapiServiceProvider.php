@@ -2,9 +2,9 @@
 
 namespace Meetjet\LaravelTelegramGatewayapi;
 
+use Meetjet\LaravelTelegramGatewayapi\Commands\LaravelTelegramGatewayapiCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Meetjet\LaravelTelegramGatewayapi\Commands\LaravelTelegramGatewayapiCommand;
 
 class LaravelTelegramGatewayapiServiceProvider extends PackageServiceProvider
 {
